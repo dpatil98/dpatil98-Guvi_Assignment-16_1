@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+    /* background-image: linear-gradient(to right, #f4ff00, #eff706, #eaef0b, #e5e80f, #e0e013);  */
+    /* background-image: linear-gradient(to left bottom, #eed424, #e7c81c, #e0bc14, #d9b00b, #d1a402); */
+    /* background-image: linear-gradient(to left bottom, #5beaff, #87ecdf, #b2ebc7, #d5e7bf, #ede4c5);*/
+    /* background-image: linear-gradient(to left bottom, #e2ff5b, #e6ff67, #e9ff73, #edff7e, #f0ff89);  */
+    background-color: rgb(61, 61, 61);
+    
+}
+
+.container{
+
+    padding:0px 0px 200px 0px;
+    
+}
+
+.searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color: rgb(255, 0, 76);
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;  /*ref from https://getcssscan.com/css-box-shadow-examples */
+    
+    }
+
+
+
+.search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none; 
+    width: 0px;
+    caret-color:transparent;
+    line-height: 40px;
+    font-weight: 600;
+    font-family: 'comic sans', cursive ;
+    font-size: 20px;
+    transition: width 0.4s linear;
+    
+
+    }
+
+    
+
+.searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 450px;
+    caret-color:red;
+    transition: width 0.4s linear;
+    
+    }
+
+.searchbar:hover > .search_icon{
+    width: 40px;
+    background: white;
+    color: #e7c83c;
+    }
+
+.search_icon{
+    height: 40px;
+    width: 35px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    text-decoration:none;
+    }
+
+
+.card{
+         
+         /* background-color: #e9e505; */
+         /* background-image: linear-gradient(to left bottom, #f7dc2e, #e9cd32, #e0bc14, #cfad22, #cea616); */
+         background-color: rgb(53, 53, 53);
+         
+         border-radius: 7px;
+         border: 5px solid rgb(255, 0, 76);
+         margin-top: 20px;
+         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+         /* box-shadow: rgb(0 0 0 / 24%) 0px 20px 2px 8px; */
+         overflow: hidden;
+         
+    }
+
+.card:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left:60%;
+        width: 100%;
+        height: 100%;
+        transform: skewX(-110deg);
+        filter: blur(2px);
+        background: rgba(102, 102, 97, 0.2) ;
+        
+
+    }
+
+.card-body{
+        width: 300px;
+        padding-left:10px;
+       
+    }
+
+.card-title{
+        font-family: 'comic sans', cursive ;
+        color: white;
+        padding: 10px;
+        margin: auto;
+        letter-spacing: 5px ;
+    }
+
+.card p{
+        font-weight: 600;
+        color: rgb(198, 194, 255);
+        text-shadow: 1px 0px 3px rgb(83, 82, 82);
+    }
+
+.card-body img{
+
+        border: 1px solid gold;
+        width: 150px;
+        height:200px;
+        object-fit: cover;
+    }
+
+.btn-bookNow{
+
+        background-color: #a8952a;
+        border-radius: 10px;
+        color:rgb(255, 255, 255);
+        font-weight: 600;
+        font-family: 'comic sans', cursive ;
+        
+        
+
+    }
+  
+.btn-bookNow:hover{
+
+        background-color: #fcff46;
+        box-shadow: 2px 2px 15px 2px #ffcc25;
+        color:#f3722c;
+        font-weight: 500;
+
+    }
+
+.btn-soldOut{
+
+        background-color: #fd0b0b;
+        border-radius: 10px;
+        font-weight: 600;
+        font-family: 'comic sans', cursive ;
+        color:white;
+        font-weight: 500;
+
+    }
